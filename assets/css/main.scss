@@ -61,6 +61,15 @@ h6 {
     width: 100%;
     background-color: #ffffff;
     box-shadow: 0 6px 8px -6px rgba(15,23,42,.05), 0 8px 16px -6px rgba(15,23,42,.05);
+    animation: headerFade .3s linear;
+  }
+  @keyframes headerFade {
+    50% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
 }
 .logo {
@@ -147,8 +156,6 @@ h6 {
     }
   }
 }
-
-
 // header part end
 
 // hero section start
