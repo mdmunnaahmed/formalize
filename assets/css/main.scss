@@ -69,15 +69,15 @@
 }
 // this is only for scss helper. it would be compiled to css
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap");
 
 // Base Css Start
 * {
   box-sizing: border-box;
 }
 body {
-  font-family: 'Roboto', sans-serif;
-  color: #0F172A;
+  font-family: "Roboto", sans-serif;
+  color: #0f172a;
   font-weight: 300;
   font-size: 18px;
 }
@@ -94,7 +94,7 @@ p {
 }
 a {
   text-decoration: none;
-  color: #0F172A;
+  color: #0f172a;
 }
 
 h1,
@@ -104,30 +104,30 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-family: 'Outfit', sans-serif;
-  color: #0F172A;
+  font-family: "Outfit", sans-serif;
+  color: #0f172a;
   font-weight: 500;
 }
 
 .overlay {
-    position: fixed;
-    content: '';
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    &.active {
-        z-index: 9999;
-        background-color: rgba(59, 60, 74, 0.4);
-    }
+  position: fixed;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: 0.3s;
+  &.active {
+    z-index: 9999;
+    background-color: rgba(59, 60, 74, 0.4);
+  }
 }
 // Base Css End
 
 // header part start
 .header {
-  transition: all ease .3s;
+  transition: all ease 0.3s;
   position: relative;
-  z-index: 111;
   @include breakpoint(max-lg) {
     padding: 20px 0;
     border-bottom: 1px solid #eaeaea;
@@ -137,8 +137,13 @@ h6 {
     top: 0;
     width: 100%;
     background-color: #ffffff;
-    box-shadow: 0 6px 8px -6px rgba(15,23,42,.05), 0 8px 16px -6px rgba(15,23,42,.05);
-    animation: headerFade .3s linear;
+    box-shadow:
+      0 6px 8px -6px rgba(15, 23, 42, 0.05),
+      0 8px 16px -6px rgba(15, 23, 42, 0.05);
+    z-index: 111111;
+    @include breakpoint(lg) {
+      animation: headerFade 0.3s linear;
+    }
   }
   @keyframes headerFade {
     50% {
@@ -151,12 +156,12 @@ h6 {
 }
 .logo {
   a {
-    font-family: 'Outfit', sans-serif;
+    font-family: "Outfit", sans-serif;
     font-weight: 400;
     font-size: 32px;
     line-height: 1;
     &:hover {
-      color: #0F172A;
+      color: #0f172a;
     }
   }
 }
@@ -169,20 +174,20 @@ h6 {
     margin-right: 26px;
   }
   .try-btn {
-    background-color: #0019FD;
+    background-color: #0019fd;
     color: #fff;
     border-radius: 8px;
-    box-shadow: 0px 5px 6px 0px #0019FD1A;
+    box-shadow: 0px 5px 6px 0px #0019fd1a;
     padding: 7px 20px;
     line-height: 26px;
     font-weight: 500;
     font-size: 16px;
-    border: 1px solid #0019FD;
-    transition: all ease .3s;
+    border: 1px solid #0019fd;
+    transition: all ease 0.3s;
 
     &:hover {
       background-color: transparent;
-      color: #0019FD;
+      color: #0019fd;
     }
   }
 }
@@ -208,27 +213,36 @@ h6 {
       &:hover {
         color: #000;
       }
-
     }
   }
 }
 .nav-content-right {
   @include breakpoint(max-lg) {
     position: fixed;
-    width: 300px;
+    width: 100%;
     left: 0;
     top: 0;
     height: 100vh;
     background-color: #fff;
     flex-direction: column;
-    // justify-content: flex-start !important;
     align-items: flex-start !important;
-    padding: 60px 40px;
+    padding: 20px 30px;
     box-shadow: 2px 0 25px #00000012;
+    transform: translateX(-100%);
+    transition: 0.4s linear;
+    overflow-y: auto;
+    z-index: 10000;
+    &.active {
+      transform: translateX(0);
+    }
     .main-menu {
       flex-direction: column;
       padding: 0;
-      margin-bottom: 40px;
+      margin-bottom: 60px;
+      margin-top: 40px;
+    }
+    .width-u-100 {
+      width: 100%;
     }
   }
 }
@@ -238,14 +252,12 @@ h6 {
     margin: 0;
     padding: 0;
     list-style: none;
-    transition: all ease .3s;
+    transition: all ease 0.3s;
     display: none;
     position: absolute;
   }
   .control-lan {
     margin-right: 23px;
-
-    
   }
   .control-lan:focus {
     ul {
@@ -261,6 +273,9 @@ h6 {
   padding-bottom: 100px;
   @include breakpoint(max-lg) {
     padding-bottom: 60px;
+  }
+  @include breakpoint(max-sm) {
+    padding-top: 50px;
   }
 }
 .hero-content {
@@ -290,25 +305,25 @@ h6 {
   }
 }
 
-// cmn--btn button start 
+// cmn--btn button start
 .cmn--btn {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 500;
   text-align: center;
-  background: #0019FD;
+  background: #0019fd;
   color: #fff;
   border-radius: 8px;
-  border: 2px solid #0019FD;
+  border: 2px solid #0019fd;
   // padding: 13px 144px;
-  transition: all ease .3s;
-  &:hover, &.btn-outline {
+  transition: all ease 0.3s;
+  &:hover,
+  &.btn-outline {
     background-color: transparent;
-    color: #0019FD;
-
+    color: #0019fd;
   }
   &.btn-outline:hover {
-    background: #0019FD;
+    background: #0019fd;
     color: #fff;
   }
 }
@@ -329,7 +344,7 @@ h6 {
   .cmn--btn {
     padding: 13px 30px;
     display: block;
-    box-shadow: 0px 5px 6px 0px #0019FD26;
+    box-shadow: 0px 5px 6px 0px #0019fd26;
     @include breakpoint(max-lg) {
       padding: 10px 25px;
       font-size: 20px;
@@ -354,7 +369,6 @@ h6 {
 }
 // hero section end
 
-
 // build software section start
 .build-software {
   padding-top: 15px;
@@ -372,8 +386,7 @@ h6 {
     }
   }
 }
-// build software section end 
-
+// build software section end
 
 // workflow section start
 .workflow-section {
@@ -427,9 +440,9 @@ h6 {
   }
 }
 .workflow-thumb {
-  border: 6px solid #BBD4F5;
+  border: 6px solid #bbd4f5;
   border-radius: 8px;
-  background-color: #F3F4F6;
+  background-color: #f3f4f6;
   img {
     width: 100%;
     object-fit: cover;
@@ -489,7 +502,6 @@ h6 {
       line-height: 1;
       margin-bottom: 0;
       padding-bottom: 20px;
-
     }
   }
 }
