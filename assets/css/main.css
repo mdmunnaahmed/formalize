@@ -203,6 +203,7 @@ h6 {
   top: 100%;
   border: 1px solid rgba(0, 0, 0, 0.0823529412);
   padding: 10px 15px;
+  min-width: 80px;
 }
 .language-select ul li {
   font-size: 14px;
