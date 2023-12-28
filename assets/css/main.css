@@ -38,23 +38,13 @@ h6 {
   font-weight: 500;
 }
 
-.overlay {
-  position: fixed;
-  content: "";
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  transition: 0.3s;
-}
-.overlay.active {
-  z-index: 9999;
-  background-color: rgba(59, 60, 74, 0.4);
-}
-
 .header {
+  width: 100%;
+  top: 0;
+  position: sticky;
   transition: all ease 0.3s;
-  position: relative;
+  background-color: #ffffff;
+  z-index: 11111;
 }
 @media (max-width: 991px) {
   .header {
@@ -63,24 +53,12 @@ h6 {
   }
 }
 .header.sticky {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  background-color: #ffffff;
   box-shadow: 0 6px 8px -6px rgba(15, 23, 42, 0.05), 0 8px 16px -6px rgba(15, 23, 42, 0.05);
   z-index: 111111;
 }
-@media (min-width: 992px) {
-  .header.sticky {
-    animation: headerFade 0.3s linear;
-  }
-}
-@keyframes headerFade {
-  50% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
+@media (max-width: 1199px) {
+  .header .container {
+    padding-inline: 24px;
   }
 }
 
@@ -152,26 +130,57 @@ h6 {
     position: fixed;
     width: 100%;
     left: 0;
-    top: 0;
-    height: 100vh;
+    top: 76px;
+    height: calc(100vh - 75px);
     background-color: #fff;
     flex-direction: column;
     align-items: flex-start !important;
-    padding: 20px 30px;
-    box-shadow: 2px 0 25px rgba(0, 0, 0, 0.0705882353);
-    transform: translateX(-100%);
-    transition: 0.4s linear;
+    padding: 0px 24px;
     overflow-y: auto;
-    z-index: 10000;
+    z-index: 100001;
+    transform: translateY(calc(-100% - 100px));
+    justify-content: flex-start !important;
+    align-items: center !important;
   }
   .nav-content-right.active {
-    transform: translateX(0);
+    transform: translateY(-1px);
   }
   .nav-content-right .main-menu {
     flex-direction: column;
     padding: 0;
-    margin-bottom: 60px;
-    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    gap: 0;
+  }
+  .nav-content-right .main-menu li:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1450980392);
+  }
+  .nav-content-right .main-menu li a {
+    padding: 12px 8px;
+  }
+  .nav-content-right .lang-sign-wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-content-right .nav-btn-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .nav-content-right .nav-btn-wrapper .try-btn {
+    text-align: center;
+  }
+  .nav-content-right .nav-btn-wrapper a {
+    width: 100%;
+  }
+  .nav-content-right .nav-btn-wrapper a:first-child {
+    padding-inline: 8px;
+  }
+  .nav-content-right .language-select {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.0823529412);
   }
   .nav-content-right .width-u-100 {
     width: 100%;
@@ -188,9 +197,24 @@ h6 {
   transition: all ease 0.3s;
   display: none;
   position: absolute;
+  background-color: white;
+  width: 100%;
+  left: 0;
+  top: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.0823529412);
+  padding: 10px 15px;
+}
+.language-select ul li {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 0;
+  font-weight: 500;
 }
 .language-select .control-lan {
   margin-right: 23px;
+  display: block;
 }
 .language-select .control-lan:focus ul {
   display: block;
@@ -283,7 +307,7 @@ h6 {
 .hero-btn-wrapper .cmn--btn {
   padding: 13px 30px;
   display: block;
-  box-shadow: 0px 5px 6px 0px rgba(0, 25, 253, 0.1490196078);
+  box-shadow: 0px 5px 6px 0px rgba(86, 89, 116, 0.1490196078);
 }
 @media (max-width: 991px) {
   .hero-btn-wrapper .cmn--btn {
@@ -444,6 +468,7 @@ h6 {
   max-width: 380px;
 }
 .workflow-list li {
+  align-items: flex-start;
   line-height: 1.8;
 }
 .workflow-list li:not(:last-child) {
@@ -451,6 +476,7 @@ h6 {
 }
 .workflow-list li img {
   padding-right: 13px;
+  transform: translateY(6px);
 }
 .workflow-list.style-two {
   display: flex;
@@ -458,9 +484,11 @@ h6 {
   margin-top: 32px;
 }
 .workflow-list.style-two li {
-  align-items: center;
   min-width: 180px;
-  line-height: 1;
+  line-height: 1.5;
   margin-bottom: 0;
   padding-bottom: 20px;
+}
+.workflow-list.style-two li img {
+  transform: translateY(3px);
 }
