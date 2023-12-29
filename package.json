@@ -1,21 +1,19 @@
 {
-  "name": "mlm-2",
+  "name": "patrick",
   "version": "1.0.0",
-  "description": "",
-  "main": "gulpfile.js",
+  "description": "��#\u0000 \u0000p\u0000a\u0000t\u0000r\u0000i\u0000c\u0000k\u0000\r\u0000 \u0000",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdmunnaahmed/patrick.git"
+  },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-cssbeautify": "^3.0.0",
-    "gulp-imagemin": "^8.0.0",
-    "gulp-sass": "^5.0.0",
-    "gulp-uglify": "^3.0.2",
-    "gulp-uglifycss": "^1.1.0",
-    "sass": "^1.39.2"
-  }
+  "bugs": {
+    "url": "https://github.com/mdmunnaahmed/patrick/issues"
+  },
+  "homepage": "https://github.com/mdmunnaahmed/patrick#readme"
 }
