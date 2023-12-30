@@ -413,11 +413,6 @@ h6 {
     padding-bottom: 65px;
   }
 }
-@media (max-width: 991px) {
-  .workflow-content-wrapper > .row {
-    gap: 40px 0;
-  }
-}
 
 .workflow-thumb {
   border: 6px solid #bbd4f5;
