@@ -1722,6 +1722,11 @@ h2 {
     padding-bottom: 1.5rem;
   }
 
+  .lg\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
   .lg\:pb-24 {
     padding-bottom: 6rem;
   }
