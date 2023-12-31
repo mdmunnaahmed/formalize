@@ -30,7 +30,6 @@ function handleScroll() {
 window.addEventListener("scroll", handleScroll);
 handleScroll();
 
-
 // Sticky Menu
 window.addEventListener("scroll", function () {
   var header = document.querySelector(".header");
@@ -46,3 +45,46 @@ toggler.addEventListener("click", function () {
   header.classList.toggle("active");
 });
 
+// Faq Click Event
+var faqHeaders = document.querySelectorAll(".faq-item .faq-title");
+
+faqHeaders.forEach(function (header) {
+  header.addEventListener("click", function (e) {
+    var element = this.parentElement;
+
+    if (element.classList.contains("open")) {
+      element.classList.remove("open");
+      element.querySelector(".faq-item .faq-content").classList.remove("open");
+      element.querySelector(".faq-item .faq-content").style.display = "none";
+    } else {
+      element.classList.add("open");
+      element.querySelector(".faq-item .faq-content").style.display = "block";
+
+      // Close other open items
+      var siblings = element.parentElement.children;
+      for (var i = 0; i < siblings.length; i++) {
+        if (siblings[i] !== element && siblings[i].classList.contains("open")) {
+          siblings[i].classList.remove("open");
+          siblings[i].querySelector(".faq-item .faq-content").style.display = "none";
+        }
+      }
+    }
+  });
+});
+
+// Slider Part
+$(".client-review-slider").slick({
+  fade: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  speed: 1500,
+  pauseOnHover: true,
+  centerMode: false,
+  dots: false,
+  arrows: false,
+  nextArrow: '<i class="las la-arrow-right arrow-right"></i>',
+  prevArrow: '<i class="las la-arrow-left arrow-left"></i> ',
+});

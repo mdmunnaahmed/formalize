@@ -51,15 +51,18 @@
   }
 
   /* additional CSS Start */
+  .font-title {
+    font-family: "Outfit", sans-serif;
+  }
   .header {
     z-index: 111111;
-    transition: .4s;
+    transition: 0.4s;
   }
   .header.active {
     box-shadow: 0 6px 8px -6px rgba(15, 23, 42, 0.05), 0 8px 16px -6px rgba(15, 23, 42, 0.05);
     z-index: 111111;
   }
-  @media (max-width:991px) {
+  @media (max-width: 991px) {
     #responsiveHeader {
       transform: translateX(-100%);
     }
@@ -70,6 +73,15 @@
   .control-lan:hover ul,
   .control-lan:focus ul {
     display: block;
+  }
+  .faq-item .faq-content{
+    display: none;
+  }
+  .faq-item.open .faq-title img {
+    transform: rotate(-180deg);
+  }
+  .faq-item:not(:last-child) {
+    border-bottom: 0
   }
   /* additional CSS End */
 }
@@ -85,45 +97,54 @@
     border-radius: 8px;
     transition: all ease 0.3s;
   }
-  .btn.btn--base {
+  .btn--lg {
+    font-size: 22px;
+    padding: 13px 55px;
+    @apply text-lg;
+  }
+  @media (max-width: 575px) {
+    .btn--lg {
+      font-size: 16px;
+      padding: 10px 25px;
+    }
+  }
+  .btn--dark.btn--outline {
+    color: #000;
+    background: transparent;
+    border: 1px solid #000;
+  }
+  .btn--dark.btn--outline:hover {
+    color: #fff;
+    background: #000;
+    border: 1px solid #000;
+  }
+  .btn--base {
     color: #fff;
     background: #0019fd;
     border: 2px solid #0019fd;
   }
-  .btn.btn--base:hover {
+  .btn--white {
+    color: #0019fd;
+    background: #fff;
+    border: 2px solid #0019fd;
+  }
+  .btn--white:hover {
+    color: #fff;
+    background: #0019fd;
+    border: 2px solid #0019fd;
+  }
+  .btn--base:hover {
     color: #0019fd;
     background: transparent;
     border: 2px solid #0019fd;
   }
-  .btn.btn.btn--base.btn--outline {
+  .btn.btn--base.btn--outline {
     border: 2px solid #0019fd;
     background-color: transparent;
     color: #0019fd;
   }
-  .btn.btn.btn--base.btn--outline:hover {
+  .btn.btn--base.btn--outline:hover {
     color: #fff;
     background-color: #0019fd;
-  }
-  .cmn--btn {
-    @apply px-4;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    text-align: center;
-    background: #0019fd;
-    color: #fff;
-    border-radius: 8px;
-    border: 2px solid #0019fd;
-    transition: all ease 0.3s;
-  }
-  .cmn--btn:hover,
-  .cmn--btn.btn-outline {
-    background-color: transparent;
-    color: #0019fd;
-  }
-  .cmn--btn.btn-outline:hover {
-    background: #0019fd;
-    color: #fff;
   }
 }

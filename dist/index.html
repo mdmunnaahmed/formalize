@@ -9,10 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <!-- favicon -->
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <!-- main css -->
     <link rel="stylesheet" href="./assets/css/animation.css">
+    <link rel="stylesheet" href="./assets/css/slick.css">
     <link rel="stylesheet" href="./assets/css/output.css">
 
     <title>Formalize - Streamline your compliance workflows</title>
@@ -32,7 +34,8 @@
                 <span id="headerToggler" class="lg:hidden">
                     <img src="./assets/images/icons/burger.svg" alt="" width="30">
                 </span>
-                <div class="lg:static lg:h-auto lg:w-auto lg:flex lg:items-center lg:justify-between lg:flex-grow lg:flex-row lg:p-0   fixed h-screen w-full justify-start bg-white-default left-0 top-16 flex-col z-50 items-start p-5" id="responsiveHeader">
+                <div class="lg:static lg:h-auto lg:w-auto lg:flex lg:items-center lg:justify-between lg:flex-grow lg:flex-row lg:p-0   fixed h-screen w-full justify-start bg-white-default left-0 top-16 flex-col z-50 items-start p-5"
+                    id="responsiveHeader">
                     <div class="language-select lg:hidden">
                         <a href="#" class="control-lan relative flex items-center gap-2 mb-8 border border-border-default py-2 px-4">
                             <img class="inline-block" src="assets/images/icons/flag1.svg" alt="icons">
@@ -85,8 +88,8 @@
                         <p class="">Improve and automate your compliance processes for <span>GDPR, ISMS, ISO27001, NIS2, SOC2</span> and more.</p>
 
                         <div class="xl:mt-16 mt-8 mx-auto md:mx-0" style="max-width: 435px;">
-                            <a class="cmn--btn fadeUp lg:block py-2 px-4 sm:px-5 lg:py-3 xl:py-4 xl:text-xl lg:text-lg" href="">Book a demo</a>
-                            <a class="cmn--btn fadeUp lg:block py-2 px-4 sm:px-5 lg:py-3 xl:py-4 xl:text-xl lg:text-lg btn-outline lg:mt-3" data-animation-delay="300" href="">Try for free</a>
+                            <a class="btn btn--base fadeUp lg:block py-2 px-4 sm:px-5 lg:py-3 xl:py-4 xl:text-xl lg:text-lg" href="">Book a demo</a>
+                            <a class="btn btn--base btn--outline fadeUp lg:block py-2 px-4 sm:px-5 lg:py-3 xl:py-4 xl:text-xl lg:text-lg lg:mt-3" data-animation-delay="300" href="">Try for free</a>
                             <p class="mt-3 lg:text-center"><span class="font-medium">128</span> companies just signed up</p>
                         </div>
                     </div>
@@ -203,31 +206,226 @@
         <!-- workflow section end -->
 
         <!-- feature section start -->
-        <section class="pt-16 sm:pt-20 lg:pt-24 xl:pt-36 pb-16 sm:pb-20 lg:pb-32">
+        <section class="pt-16 sm:pt-20 lg:pt-24 xl:pt-36 pb-16 sm:pb-20 lg:pb-24 xl:pb-36">
             <div class="container">
                 <h2 class="mb-8 sm:mb-12 lg:mb-16 text-center lg:w-8/12 xl:w-7/12 mx-auto">Make compliance automation seamless</h2>
                 <div class="grid content-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
                     <div class="px-7 lg:py-14 py-10 bg-gray-light text-center">
                         <h5 class="text-lg mb-2">Trust Center</h5>
-                        <p class="leading-7" >Share access to your privacy policies, code of conduct, whistleblowing channel, and much more in your own branded universe.</p>
+                        <p class="leading-7">Share access to your privacy policies, code of conduct, whistleblowing channel, and much more in your own branded universe.</p>
                     </div>
                     <div class="px-7 lg:py-14 py-10 bg-gray-light text-center">
                         <h5 class="text-lg mb-2">Policy management</h5>
-                        <p class="leading-7" >Host, update, and approve policies for simplified policy governance process. Link policies to various compliance areas seamlessly.</p>
+                        <p class="leading-7">Host, update, and approve policies for simplified policy governance process. Link policies to various compliance areas seamlessly.</p>
                     </div>
                     <div class="px-7 lg:py-14 py-10 bg-gray-light text-center">
                         <h5 class="text-lg mb-2">Group Structures</h5>
-                        <p class="leading-7" >Use templates and nested access permissions to manage group structures and get access to statistical information across the entire group.</p>
+                        <p class="leading-7">Use templates and nested access permissions to manage group structures and get access to statistical information across the entire group.</p>
                     </div>
                 </div>
             </div>
         </section>
         <!-- feature section end -->
 
+        <!-- call to action section start -->
+        <section class="call-to-action pb-16 sm:pb-20 lg:pb-24">
+            <div class="container">
+                <img src="./assets/images/call-to-action.png" alt="call to action img" class="mx-auto lg:-mb-20 sm:-mb-10 -z-10 relative sm:px-10 px-5">
+                <div class="pt-9 px-6 pb-8 bg-base-dark text-center rounded-xl">
+                    <h2 class="text-white-default mb-6 sm:mb--8 lg:mb-10">Do you want to see the system in action?</h2>
+                    <div class="flex flex-wrap justify-center lg:gap-x-7 gap-x-4 gap-y-4">
+                        <a href="" class="btn btn--base btn--lg hover:bg-white-default hover:text-base-default">Book a demo</a>
+                        <a href="" class="btn btn--white btn--lg">Try for free</a>
+                    </div>
+                </div>
+                <ul class="grid lg:grid-cols-4 sm:grid-cols-2 gap-y-5 mt-5">
+                    <li class="flex items-start lg:justify-center gap-3">
+                        <img src="assets/images/icons/checkmark-dark.svg" alt="icons">
+                        <span>Flexible form and audit builder</span>
+                    </li>
+                    <li class="flex items-start lg:justify-center gap-3">
+                        <img src="assets/images/icons/checkmark-dark.svg" alt="icons">
+                        <span>Risk & incident management</span>
+                    </li>
+                    <li class="flex items-start lg:justify-center gap-3">
+                        <img src="assets/images/icons/checkmark-dark.svg" alt="icons">
+                        <span>Automated compliance workflows</span>
+                    </li>
+                    <li class="flex items-start lg:justify-center gap-3">
+                        <img src="assets/images/icons/checkmark-dark.svg" alt="icons">
+                        <span>Top rated support</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- call to action section end -->
+
+        <!-- client review section start -->
+        <section class="client-review">
+            <div class="container">
+                <div class="mx-auto h-px w-20 bg-title-default lg:mb-9 mb-6"></div>
+                <div class="client-review-slider">
+                    <div class="text-center xxl:px-40 xl:px-28">
+                        <img src="assets/images/client/c1.png" alt="client thumb" class="sm:w-36 sm:h-36 w-28 h-28 rounded-full mx-auto bg-border-thumb object-contain mb-5 bg-opacity-45">
+                        <p class="text-lg sm:text-xl lg:text-2xl leading-normal">The software is very easy to set up thanks to its intuitive operation. Formalize is now our all-in-one solution for our clients to manage every compliance process within
+                            their company.</p>
+                        <h6 class="text-lg mb-3 mt-6">Lúcia Marinho</h6>
+                        <span class="text-sm font-medium font-title">CEO, DPO and Industrial Department Manager - SEGI Consulting</span>
+                        <div class="flex lg:text-xl text-lg justify-center gap-3 sm:gap-5 lg:mt-11 sm:mt-8 mt-5">
+                            <img src="./assets/images/icons/star.svg" alt="" class="lg:w-8 w-5">
+                            <img src="./assets/images/icons/star.svg" alt="" class="lg:w-8 w-5">
+                            <img src="./assets/images/icons/star.svg" alt="" class="lg:w-8 w-5">
+                            <img src="./assets/images/icons/star.svg" alt="" class="lg:w-8 w-5">
+                            <img src="./assets/images/icons/star.svg" alt="" class="lg:w-8 w-5">
+                        </div>
+                    </div>
+                    <div class="text-center xxl:px-40 xl:px-28">
+                        <img src="assets/images/client/c1.png" alt="client thumb" class="sm:w-36 sm:h-36 w-28 h-28 rounded-full mx-auto bg-border-thumb object-contain mb-5 bg-opacity-45">
+                        <p class="text-lg sm:text-xl lg:text-2xl leading-normal">The software is very easy to set up thanks to its intuitive operation. Formalize is now our all-in-one solution for our clients to manage every compliance process within
+                            their company.</p>
+                        <h6 class="text-lg mb-3 mt-6">Lúcia Marinho</h6>
+                        <span class="text-sm font-medium font-title">CEO, DPO and Industrial Department Manager - SEGI Consulting</span>
+                        <div class="flex lg:text-xl text-lg justify-center gap-3 sm:gap-5 lg:mt-11 sm:mt-8 mt-5">
+                            <img src="./assets/images/icons/star.svg" alt="" class="lg:w-8 w-5">
+                            <img src="./assets/images/icons/star.svg" alt="" class="lg:w-8 w-5">
+                            <img src="./assets/images/icons/star.svg" alt="" class="lg:w-8 w-5">
+                            <img src="./assets/images/icons/star.svg" alt="" class="lg:w-8 w-5">
+                            <img src="./assets/images/icons/star.svg" alt="" class="lg:w-8 w-5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- client review section end -->
+
+        <!-- overview section start -->
+        <section class="overview-section pt-16 sm:pt-20 lg:pt-24 xl:pt-32">
+            <div class="container">
+                <div class="grid lg:grid-cols-2 items-center gap-y-9 gap-x-24">
+                    <div>
+                        <img src="./assets/images/overview.png" alt="overview thumb">
+                    </div>
+                    <div>
+                        <h2>We're dedicated to the ideal experience</h2>
+                        <p class="lg:max-w-96 mt-3 mb-4">Delivering the ideal data compliance experience is what we work towards every day. </p>
+                        <ul class="grid sm:grid-cols-3 grid-cols-2 gap-y-6">
+                            <li class="flex flex-col">
+                                <p class="text-xl lg:text-2xl font-medium">75+</p>
+                                <p class="text-lg">Employees</p>
+                            </li>
+                            <li class="flex flex-col">
+                                <p class="text-xl lg:text-2xl font-medium">80+</p>
+                                <p class="text-lg">Countries served</p>
+                            </li>
+                            <li class="flex flex-col">
+                                <p class="text-xl lg:text-2xl font-medium">12+</p>
+                                <p class="text-lg">Support languages</p>
+                            </li>
+                        </ul>
+                        <a href="" class="btn btn--dark btn--outline btn--lg lg:mt-9 mt-7 lg:px-10 sm:px-8 px-6">Ask us anything</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- overview section end -->
+
+        <!-- faq section start -->
+        <section class="faq-section pt-16 sm:pt-20 lg:pt-24 xl:pt-32 pb-16 sm:pb-20 lg:pb-24 xl:pb-36">
+            <div class="container">
+                <h2 class="mb-8 sm:mb-12 lg:mb-16 text-center lg:w-8/12 xl:w-7/12 mx-auto">FAQs</h2>
+                <div class="border border-border-default faq-item">
+                    <div class="cursor-pointer lg:p-9 px-4 lg:py-6 py-4 faq-title flex justify-between items-center">
+                        <p class="lg:text-xl2 text-lg me-2">Can we try Formalize before we buy it?</p>
+                        <img src="./assets/images/icons/angle-down.svg" alt="" class="w-4 lg:w-5">
+                    </div>
+                    <div class="lg:p-9 px-4 lg:py-6 py-4 pt-0 faq-content hidden">
+                        <p>Yes! You can, of course, try our software for free for 14 days without providing any credit card information. Try out an account by pressing the "Try for free" button or by scheduling a demo. </p>
+                    </div>
+                </div>
+                <div class="border border-border-default faq-item">
+                    <div class="cursor-pointer lg:p-9 px-4 lg:py-6 py-4 faq-title flex justify-between items-center">
+                        <p class="lg:text-xl2 text-lg me-2">What is the Formalize Trust Center?</p>
+                        <img src="./assets/images/icons/angle-down.svg" alt="" class="w-4 lg:w-5">
+                    </div>
+                    <div class="lg:p-9 px-4 lg:py-6 py-4 pt-0 faq-content hidden">
+                        <p>The Trust Center makes it easy for you to document and share all the work you do in relation to compliance and best business practices. Share access to your privacy policies, code of conduct, whistleblowing channel, and
+                            much more in your own branded universe.</p>
+                    </div>
+                </div>
+                <div class="border border-border-default faq-item">
+                    <div class="cursor-pointer lg:p-9 px-4 lg:py-6 py-4 faq-title flex justify-between items-center">
+                        <p class="lg:text-xl2 text-lg me-2">How many users are included?</p>
+                        <img src="./assets/images/icons/angle-down.svg" alt="" class="w-4 lg:w-5">
+                    </div>
+                    <div class="lg:p-9 px-4 lg:py-6 py-4 pt-0 faq-content hidden">
+                        <p>You can add as many users as necessary. You can invite both internal and external people, such as law firms or consultants. Once you invite users, they will gain authorized access to the system.</p>
+                    </div>
+                </div>
+                <div class="border border-border-default faq-item">
+                    <div class="cursor-pointer lg:p-9 px-4 lg:py-6 py-4 faq-title flex justify-between items-center">
+                        <p class="lg:text-xl2 text-lg me-2">What support do we get in the implementation process?</p>
+                        <img src="./assets/images/icons/angle-down.svg" alt="" class="w-4 lg:w-5">
+                    </div>
+                    <div class="lg:p-9 px-4 lg:py-6 py-4 pt-0 faq-content hidden">
+                        <p>Our award-winning customer support team is ready to assist you in the process of implementation of Formalize in your organisation. You will be scheduled for an onboarding meeting where we can answer all your questions and
+                            help you navigate through the system. However, the platform is user-friendly and easy to use even without our help.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- faq section end -->
+
     </main>
 
+    <footer class="footer">
+        <div class="container">
+            <div class="flex flex-wrap gap-x-4 justify-between pb-14 gap-y-6">
+                <div class="lg:w-3/12 md:w-4/12">
+                    <h6 class="text-xl">Take your compliance workflow to the next level</h6>
+                    <a href="" class="btn btn--lg btn--base mt-4 block">Book a demo</a>
+                </div>
+                <div class="lg:w-8/12 md:w-7/12 w-full flex gap-x-10">
+                    <div class="flex-grow">
+                        <div class="grid sm:grid-cols-3 lg:grid-cols-4 grid-cols-2 gap-y-5 items-end">
+                            <div class="">
+                                <h6 class="text-base mb-2">Formalize</h6>
+                                <ul>
+                                    <li class="py-1"><a href="">Home</a></li>
+                                    <li class="py-1"><a href="">Pricing</a></li>
+                                    <li class="py-1"><a href="">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h6 class="text-base mb-2">Use Cases</h6>
+                                <ul>
+                                    <li class="py-1"><a href="">GRC</a></li>
+                                    <li class="py-1"><a href="">GDPR</a></li>
+                                    <li class="py-1"><a href="">NIS2</a></li>
+                                </ul>
+                            </div>
+                            <ul>
+                                <li class="py-1"><a href="">DORA</a></li>
+                                <li class="py-1"><a href="">SOC2</a></li>
+                                <li class="py-1"><a href="">ISO27001</a></li>
+                            </ul>
+                            <ul>
+                                <li class="py-1"><a href="">ISMS</a></li>
+                                <li class="py-1"><a href="">Risk</a></li>
+                                <li class="py-1"><a href="">Risk</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-border-default md:py-5 py-3">
+                <div class="sm:text-end text-center">&copy; 2024 Formalize.</div>
+            </div>
+        </div>
+    </footer>
 
 
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 
