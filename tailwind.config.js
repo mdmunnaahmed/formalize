@@ -16,6 +16,7 @@ module.exports = {
         default: "#0019fd",
         light: "#0772FF",
         dark: "#041E60",
+        deep: "#0012B4",
       },
       title: {
         default: "#0F172A",
@@ -37,11 +38,18 @@ module.exports = {
         default: "#D9D9D9",
         thumb: "#bbd4f5",
       },
+      transparent: {
+        default: '#ffffff00'
+      }
     },
     borderColor: {
       border: {
+        dark: "#000",
         default: "#D9D9D9",
         thumb: "#bbd4f5",
+        title: "#0F172A",
+        base: "#0019fd",
+        baseDark: "#0012B4",
       },
     },
     borderWidth: {
@@ -54,11 +62,6 @@ module.exports = {
       8: "8px",
     },
     extend: {
-      colors: {
-        base: {
-          400: "#0019fd",
-        },
-      },
       fontSize: {
         xs: "0.8rem",
         sm: "0.875rem",

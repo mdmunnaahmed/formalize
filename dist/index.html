@@ -12,10 +12,11 @@
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <!-- favicon -->
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <!-- main css -->
     <link rel="stylesheet" href="./assets/css/animation.css">
+    <!-- slider css -->
     <link rel="stylesheet" href="./assets/css/slick.css">
-    <link rel="stylesheet" href="./assets/css/output.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
 
     <title>Formalize - Streamline your compliance workflows</title>
 </head>
@@ -23,18 +24,18 @@
 <body>
 
     <!-- header part start -->
-    <nav class="header bg-white-default py-3 lg:py-4 sticky top-0">
+    <nav class="header bg-white-default py-4 lg:py-4 sticky top-0 border-b border-border-default">
         <div class="px-5 lg:container">
             <div class="nav-wrapper flex flex-wrap items-center justify-between">
                 <div class="nav-content-left xl:me-12 lg:me-8">
                     <div class="logo">
-                        <h2 class="font-normal leading-none text-3xl"><a href="">Formalize</a></h2>
+                        <h2 class="font-normal leading-none text-2xl"><a href="" class="-translate-y-1">Formalize</a></h2>
                     </div>
                 </div>
                 <span id="headerToggler" class="lg:hidden">
                     <img src="./assets/images/icons/burger.svg" alt="" width="30">
                 </span>
-                <div class="lg:static lg:h-auto lg:w-auto lg:flex lg:items-center lg:justify-between lg:flex-grow lg:flex-row lg:p-0   fixed h-screen w-full justify-start bg-white-default left-0 top-16 flex-col z-50 items-start p-5"
+                <div class="lg:static lg:h-auto lg:w-auto lg:flex lg:items-center lg:justify-between lg:flex-grow lg:flex-row lg:p-0   fixed h-screen w-full justify-start bg-white-default left-0 top-14 flex-col z-50 items-start p-5"
                     id="responsiveHeader">
                     <div class="language-select lg:hidden">
                         <a href="#" class="control-lan relative flex items-center gap-2 mb-8 border border-border-default py-2 px-4">
@@ -48,14 +49,14 @@
                         </a>
                     </div>
                     <div class="w-full lg:w-auto">
-                        <ul class="flex flex-wrap flex-col gap-x-5 lg:flex-row xl:gap-x-10">
-                            <li class="border-b border-border-default lg:border-0"><a class="block py-2 px-3 lg:py-0 lg:inline-block" href="">Use cases</a></li>
-                            <li class="border-b border-border-default lg:border-0"><a class="block py-2 px-3 lg:py-0 lg:inline-block" href="">Pricing</a></li>
-                            <li class="border-b border-border-default lg:border-0"><a class="block py-2 px-3 lg:py-0 lg:inline-block" href="">Contact</a></li>
+                        <ul class="flex flex-wrap flex-col gap-x-5 lg:flex-row xl:gap-x-6">
+                            <li class="border-b border-border-default lg:border-0"><a class="flex justify-between items-center py-2 px-3 lg:py-0 lg:inline-flex lg:gap-x-2 font-normal" href="">Use cases <img src="./assets/images/icons/angle-down.svg" width="10" alt=""></a></li>
+                            <li class="border-b border-border-default lg:border-0"><a class="flex justify-between items-center py-2 px-3 lg:py-0 lg:inline-flex lg:gap-x-2 font-normal" href="">Pricing</a></li>
+                            <li class="border-b border-border-default lg:border-0"><a class="flex justify-between items-center py-2 px-3 lg:py-0 lg:inline-flex lg:gap-x-2 font-normal" href="">Contact</a></li>
                         </ul>
                     </div>
                     <div class="flex flex-wrap items-center lang-sign-wrapper mt-12 lg:mt-0">
-                        <div class="language-select hidden lg:block me-2">
+                        <div class="language-select hidden lg:block">
                             <a href="#" class="control-lan relative">
                                 <img class="inline-block" src="assets/images/icons/flag1.svg" alt="icons">
                                 <img class="inline-block" src="assets/images/icons/arrow-bottom.svg" alt="icons">
@@ -66,8 +67,8 @@
                             </a>
                         </div>
                         <div class="w-full lg:w-auto">
-                            <a href="" class="block lg:inline-block lg:w-auto w-full py-2 px-3 lg:px-4 font-normal">Sign in</a>
-                            <a href="" class="block lg:inline-block lg:w-auto w-full btn btn--base">Try for free</a>
+                            <a href="" class="block lg:inline-block lg:w-auto w-full py-2 px-3 lg:px-5 font-normal">Sign in</a>
+                            <a href="" class="block lg:inline-block lg:w-auto w-full btn btn--base border hover:border">Try for free</a>
                         </div>
                     </div>
                 </div>
@@ -85,7 +86,7 @@
                 <div class="flex flex-wrap items-center gy-5 xl:gap-x-16 lg:gap-x-12 gap-x-8 gap-y-10">
                     <div class="md:w-1/2 text-center md:text-start">
                         <h1 class="xl:mb-10 lg:mb-8 mb-6">Streamline your compliance workflows</h1>
-                        <p class="">Improve and automate your compliance processes for <span class="font-medium">GDPR, ISMS, ISO27001, NIS2, SOC2</span> and more.</p>
+                        <p class="sm:text-lg">Improve and automate your compliance processes for <span class="font-medium">GDPR, ISMS, ISO27001, NIS2, SOC2</span> and more.</p>
 
                         <div class="xl:mt-16 mt-8 mx-auto md:mx-0" style="max-width: 435px;">
                             <a class="btn btn--base fadeUp lg:block py-2 px-4 sm:px-5 lg:py-3 xl:py-4 xl:text-xl lg:text-lg" href="">Book a demo</a>
@@ -104,7 +105,7 @@
         <!-- build software section start -->
         <section class="pt-16 sm:pt-20 lg:pt-24 pb-16 sm:pb-20 lg:pb-32">
             <div class="container">
-                <div class="build-software__title text-center">We’ve build compliance software used by thousands of companies</div>
+                <p class="sm:text-lg text-center">We’ve build compliance software used by thousands of companies</p>
                 <div class="build-logo-wrapper flex flex-wrap xl:justify-between md:justify-evenly justify-center gap-6 lg:mt-10 sm:mt-8 mt-6">
                     <div class="single-logo-item">
                         <img src="assets/images/build-logo/build-logo1.png" alt="logo" class="fadeIn sm:w-32 w-28 xl:w-auto">
@@ -240,7 +241,7 @@
                 <div class="pt-9 lg:pt-11 px-6 pb-8 lg:pb-10 bg-base-dark text-center rounded-xl">
                     <h2 class="text-white-default mb-6 sm:mb--8 lg:mb-10">Do you want to see the system in action?</h2>
                     <div class="flex flex-wrap justify-center lg:gap-x-7 gap-x-4 gap-y-4">
-                        <a href="" class="btn btn--base btn--lg hover:bg-white-default hover:text-base-default">Book a demo</a>
+                        <a href="" class="btn btn--base btn--lg">Book a demo</a>
                         <a href="" class="btn btn--white btn--lg">Try for free</a>
                     </div>
                 </div>
@@ -313,22 +314,22 @@
                     </div>
                     <div>
                         <h2>We're dedicated to the ideal <br> experience</h2>
-                        <p class="lg:max-w-96 mt-4 mb-4">Delivering the ideal data compliance experience is what we work towards every day. </p>
+                        <p class="lg:max-w-96 mt-4 mb-4 sm:text-lg">Delivering the ideal data compliance experience is what we work towards every day. </p>
                         <ul class="grid sm:grid-cols-3 grid-cols-2 gap-y-6">
                             <li class="flex flex-col">
                                 <p class="text-xl lg:text-2xl font-medium">75+</p>
-                                <p class="text-lg">Employees</p>
+                                <p class="text-lg leading-4">Employees</p>
                             </li>
                             <li class="flex flex-col">
                                 <p class="text-xl lg:text-2xl font-medium">80+</p>
-                                <p class="text-lg">Countries served</p>
+                                <p class="text-lg leading-4">Countries served</p>
                             </li>
                             <li class="flex flex-col">
                                 <p class="text-xl lg:text-2xl font-medium">12+</p>
-                                <p class="text-lg">Support languages</p>
+                                <p class="text-lg leading-4">Support languages</p>
                             </li>
                         </ul>
-                        <a href="" class="btn btn--dark btn--outline btn--lg lg:mt-9 mt-7 lg:px-10 sm:px-8 px-6">Ask us anything</a>
+                        <a href="" class="btn btn--dark btn--outline btn--lg lg:mt-9 mt-7 lg:px-9 sm:px-8 px-6">Ask us anything</a>
                     </div>
                 </div>
             </div>
@@ -383,55 +384,59 @@
 
     </main>
 
+    <!-- footer section start -->
     <footer class="footer">
         <div class="container">
             <div class="flex flex-wrap gap-x-4 justify-between pb-14 gap-y-6">
                 <div class="lg:w-3/12 md:w-4/12">
                     <h6 class="text-xl">Take your compliance workflow to the next level</h6>
-                    <a href="" class="btn btn--lg btn--base mt-4 block">Book a demo</a>
+                    <a href="" class="btn btn--lg btn--base mt-5 block">Book a demo</a>
                 </div>
                 <div class="lg:w-8/12 md:w-7/12 w-full flex gap-x-10">
                     <div class="flex-grow">
                         <div class="grid sm:grid-cols-3 lg:grid-cols-4 grid-cols-2 gap-y-5 items-end">
                             <div class="">
-                                <h6 class="text-base mb-2">Formalize</h6>
+                                <h6 class="text-base mb-2 font-normal">Formalize</h6>
                                 <ul>
-                                    <li class="py-1"><a href="">Home</a></li>
-                                    <li class="py-1"><a href="">Pricing</a></li>
-                                    <li class="py-1"><a href="">Contact</a></li>
+                                    <li class="py-1 text-sm font-normal"><a href="">Home</a></li>
+                                    <li class="py-1 text-sm font-normal"><a href="">Pricing</a></li>
+                                    <li class="py-1 text-sm font-normal"><a href="">Contact</a></li>
                                 </ul>
                             </div>
                             <div>
-                                <h6 class="text-base mb-2">Use Cases</h6>
+                                <h6 class="text-base mb-2 font-normal">Use Cases</h6>
                                 <ul>
-                                    <li class="py-1"><a href="">GRC</a></li>
-                                    <li class="py-1"><a href="">GDPR</a></li>
-                                    <li class="py-1"><a href="">NIS2</a></li>
+                                    <li class="py-1 text-sm font-normal"><a href="">GRC</a></li>
+                                    <li class="py-1 text-sm font-normal"><a href="">GDPR</a></li>
+                                    <li class="py-1 text-sm font-normal"><a href="">NIS2</a></li>
                                 </ul>
                             </div>
                             <ul>
-                                <li class="py-1"><a href="">DORA</a></li>
-                                <li class="py-1"><a href="">SOC2</a></li>
-                                <li class="py-1"><a href="">ISO27001</a></li>
+                                <li class="py-1 text-sm font-normal"><a href="">DORA</a></li>
+                                <li class="py-1 text-sm font-normal"><a href="">SOC2</a></li>
+                                <li class="py-1 text-sm font-normal"><a href="">ISO27001</a></li>
                             </ul>
                             <ul>
-                                <li class="py-1"><a href="">ISMS</a></li>
-                                <li class="py-1"><a href="">Risk</a></li>
-                                <li class="py-1"><a href="">Risk</a></li>
+                                <li class="py-1 text-sm font-normal"><a href="">ISMS</a></li>
+                                <li class="py-1 text-sm font-normal"><a href="">Risk</a></li>
+                                <li class="py-1 text-sm font-normal"><a href="">Risk</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="border-t border-border-default md:py-5 py-3">
-                <div class="sm:text-end text-center">&copy; 2024 Formalize.</div>
+            <div class="border-t border-border-title md:py-5 py-3">
+                <div class="sm:text-end text-center text-xs font-normal">&copy; 2024 Formalize.</div>
             </div>
         </div>
     </footer>
+    <!-- footer section end -->
 
-
+    <!-- jQuery link -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- slider js -->
     <script src="assets/js/slick.min.js"></script>
+    <!-- main/custom js -->
     <script src="assets/js/main.js"></script>
 </body>
 
