@@ -15,9 +15,6 @@
   sub {
     @apply inline-block;
   }
-  p:last-child {
-    @apply mb-0;
-  }
   a {
     @apply no-underline;
   }
