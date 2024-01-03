@@ -47,7 +47,6 @@ toggler.addEventListener("click", function () {
 
 // Faq Click Event
 var faqHeaders = document.querySelectorAll(".faq-item .faq-title");
-
 faqHeaders.forEach(function (header) {
   header.addEventListener("click", function (e) {
     var element = this.parentElement;
@@ -71,6 +70,18 @@ faqHeaders.forEach(function (header) {
     }
   });
 });
+
+// Mask text div toggle
+function toggleTextFade(cl, button) {
+  const toggleDiv = document.querySelector("." + cl);
+  if (!toggleDiv.classList.contains("mask-none")) {
+    toggleDiv.classList.add("mask-none");
+    button.textContent = "Read Less";
+  } else {
+    toggleDiv.classList.remove("mask-none");
+    button.textContent = "Read More";
+  }
+}
 
 // Slider Part
 $(".client-review-slider").slick({

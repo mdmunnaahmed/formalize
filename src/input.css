@@ -78,7 +78,7 @@
     transform: rotate(-180deg);
   }
   .faq-item:not(:last-child) {
-    @apply border-b-0
+    @apply border-b-0;
   }
   /* additional CSS End */
 }
@@ -126,4 +126,16 @@
   .btn:hover {
     @apply border-border-baseDark bg-base-deep text-white-default;
   }
+}
+
+@layer utilities {
+  .top-bottom-overflow-fade {
+    mask-image: linear-gradient(transparent, black 0%, black 40%, transparent 100%);
+    -webkit-mask-image: linear-gradient(transparent, black 0%, black 40%, transparent 100%);
+  }
+}
+.mask-none {
+  mask-image: none;
+  -webkit-mask-image: none;
+  height: auto;
 }

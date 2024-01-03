@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  // purge: ["./dist/*{html,js}"],
   content: ["./dist/*.{html,js}"],
   darkMode: "media",
   theme: {
@@ -23,6 +22,7 @@ module.exports = {
       },
       body: {
         default: "#0F172A",
+        two: "#454545;",
       },
       white: {
         default: "#fff",
@@ -39,8 +39,8 @@ module.exports = {
         thumb: "#bbd4f5",
       },
       transparent: {
-        default: '#ffffff00'
-      }
+        default: "#ffffff00",
+      },
     },
     borderColor: {
       border: {
@@ -68,6 +68,7 @@ module.exports = {
         base: "1rem",
         xl: "1.5rem",
         xl2: "1.375rem",
+        xl3: "1.625rem",
         "2xl": "2rem",
         "3xl": "2.225rem",
         "4xl": "3rem",
