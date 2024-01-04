@@ -974,6 +974,10 @@ h2 {
   width: 50%;
 }
 
+.w-5\/12 {
+  width: 41.666667%;
+}
+
 .min-w-16 {
   min-width: 4rem;
 }
@@ -1468,6 +1472,10 @@ h2 {
     margin-top: 2rem;
   }
 
+  .sm\:mt-4 {
+    margin-top: 1rem;
+  }
+
   .sm\:h-32 {
     height: 8rem;
   }
@@ -1655,6 +1663,14 @@ h2 {
 
   .lg\:mb-14 {
     margin-bottom: 3.5rem;
+  }
+
+  .lg\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
+  .lg\:mt-6 {
+    margin-top: 1.5rem;
   }
 
   .lg\:block {
@@ -1922,6 +1938,14 @@ h2 {
     margin-bottom: 2.75rem;
   }
 
+  .xl\:mb-14 {
+    margin-bottom: 3.5rem;
+  }
+
+  .xl\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
   .xl\:w-5\/12 {
     width: 41.666667%;
   }
@@ -1975,6 +1999,10 @@ h2 {
 
   .xl\:pt-1 {
     padding-top: 0.25rem;
+  }
+
+  .xl\:pb-28 {
+    padding-bottom: 7rem;
   }
 
   .xl\:text-xl {
