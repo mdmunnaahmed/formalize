@@ -1282,6 +1282,11 @@ a:focus svg {
      object-fit: contain;
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-5 {
   padding: 1.25rem;
 }
@@ -1610,6 +1615,10 @@ a:focus svg {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .sm\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
   .sm\:gap-5 {
     gap: 1.25rem;
   }
@@ -1678,6 +1687,14 @@ a:focus svg {
 
   .md\:w-7\/12 {
     width: 58.333333%;
+  }
+
+  .md\:w-10\/12 {
+    width: 83.333333%;
+  }
+
+  .md\:w-8\/12 {
+    width: 66.666667%;
   }
 
   .md\:grid-cols-4 {
@@ -2010,6 +2027,22 @@ a:focus svg {
     padding-top: 1rem;
   }
 
+  .lg\:pt-44 {
+    padding-top: 11rem;
+  }
+
+  .lg\:pb-44 {
+    padding-bottom: 11rem;
+  }
+
+  .lg\:pt-32 {
+    padding-top: 8rem;
+  }
+
+  .lg\:pt-20 {
+    padding-top: 5rem;
+  }
+
   .lg\:text-center {
     text-align: center;
   }
@@ -2079,6 +2112,26 @@ a:focus svg {
     margin-top: 4rem;
   }
 
+  .xl\:mb-5 {
+    margin-bottom: 1.25rem;
+  }
+
+  .xl\:-me-24 {
+    margin-inline-end: -6rem;
+  }
+
+  .xl\:-me-44 {
+    margin-inline-end: -11rem;
+  }
+
+  .xl\:-me-40 {
+    margin-inline-end: -10rem;
+  }
+
+  .xl\:-me-36 {
+    margin-inline-end: -9rem;
+  }
+
   .xl\:w-5\/12 {
     width: 41.666667%;
   }
@@ -2089,6 +2142,20 @@ a:focus svg {
 
   .xl\:w-auto {
     width: auto;
+  }
+
+  .xl\:w-6\/12 {
+    width: 50%;
+  }
+
+  .xl\:-translate-x-36 {
+    --tw-translate-x: -9rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .xl\:translate-x-36 {
+    --tw-translate-x: 9rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .xl\:items-center {
