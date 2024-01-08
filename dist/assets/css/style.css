@@ -2215,6 +2215,10 @@ a:focus svg {
     margin-bottom: 2rem;
   }
 
+  .xl\:-me-10 {
+    margin-inline-end: -2.5rem;
+  }
+
   .xl\:w-5 {
     width: 1.25rem;
   }
