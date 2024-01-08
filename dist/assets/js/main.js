@@ -83,6 +83,9 @@ function toggleTextFade(cl, button) {
   }
 }
 
+$('ul > li > .submenu').parent('li').addClass('hasSubmenu')
+$('ul > li > .submenu').siblings('a').append(`<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="text-undefined stroke-current" data-testid="chevronDown" width="16" xmlns="http://www.w3.org/2000/svg"><title>chevronDown icon</title><polyline points="6 9 12 15 18 9"></polyline></svg>`)
+
 // Slider Part
 $(".client-review-slider").slick({
   fade: false,

@@ -15,9 +15,6 @@
   sub {
     @apply inline-block;
   }
-  a {
-    @apply no-underline;
-  }
   h1,
   h2,
   h3,
@@ -77,6 +74,61 @@
   .faq-item:not(:last-child) {
     @apply border-b-0;
   }
+
+  @media (min-width: 992px) {
+    .menu > li > a {
+      position: relative;
+    }
+    .menu > li > a:hover::before {
+      opacity: 1;
+    }
+    .menu > li > a::before {
+      position: absolute;
+      content: "";
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 14px;
+      width: 72%;
+      border-bottom: 1px solid #d4d4d4;
+      opacity: 0;
+      transition: 0.3s;
+    }
+    .submenu {
+      box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25);
+      min-width: 450px;
+    }
+    svg {
+      transition: 0.3s;
+    }
+  }
+  a:focus ~ .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+  }
+  .submenu:hover {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+  }
+  @media (max-width: 991px) {
+    a:focus ~ .submenu {
+      display: block;
+    }
+    .submenu:hover {
+      display: block;
+    }
+    .hasSubmenu {
+      position: relative;
+    }
+    .submenuList {
+      margin-left: 0 !important;
+      margin-bottom: 15px;
+    }
+  }
+  a:focus svg {
+    transform: rotate(-180deg);
+  }
   /* additional CSS End */
 }
 
@@ -106,22 +158,22 @@
     }
   }
   .btn--dark.btn--outline {
-    @apply text-dark-default border border-border-dark;
+    @apply text-dark-default border border-dark;
     background-color: transparent;
   }
   .btn--base {
-    @apply text-white-default bg-base-default border-2 border-border-base;
+    @apply text-white bg-base-default border-2 border-base;
     box-shadow: 0px 5px 6px 0px #0019fd26;
   }
   .btn--white {
-    @apply text-base-default bg-white-default border-2 border-border-base;
+    @apply text-base-default bg-white border-2 border-base;
   }
   .btn--base.btn--outline {
-    @apply border-2 border-border-base text-base-default;
+    @apply border-2 border-base text-base-default;
     background-color: transparent;
   }
   .btn:hover {
-    @apply border-border-baseDark bg-base-deep text-white-default;
+    @apply border-baseDark bg-base-deep text-white;
   }
 }
 

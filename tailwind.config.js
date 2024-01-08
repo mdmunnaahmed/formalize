@@ -24,9 +24,7 @@ module.exports = {
         default: "#0F172A",
         two: "#454545;",
       },
-      white: {
-        default: "#fff",
-      },
+      white: "#fff",
       gray: {
         light: "#F1F5F9",
         medium: "#3E3E3E",
@@ -43,14 +41,12 @@ module.exports = {
       },
     },
     borderColor: {
-      border: {
-        dark: "#000",
-        default: "#D9D9D9",
-        thumb: "#bbd4f5",
-        title: "#0F172A",
-        base: "#0019fd",
-        baseDark: "#0012B4",
-      },
+      dark: "#000",
+      default: "#D9D9D9",
+      thumb: "#bbd4f5",
+      title: "#0F172A",
+      base: "#0019fd",
+      baseDark: "#0012B4",
     },
     borderWidth: {
       DEFAULT: "1px",
@@ -73,6 +69,9 @@ module.exports = {
         "3xl": "2.225rem",
         "4xl": "3rem",
         "5xl": "3.875rem",
+      },
+      spacing: {
+        "6px": "6px",
       },
     },
   },
