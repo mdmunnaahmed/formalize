@@ -24,7 +24,7 @@
 <body>
 
     <!-- header part start -->
-    <nav class="header bg-white py-4 lg:py-4 sticky top-0 border-b border-default lg:border-0">
+    <nav class="header bg-white py-4 lg:py-2 sticky top-0 border-b border-default lg:border-0">
         <div class="px-5 lg:container">
             <div class="nav-wrapper flex flex-wrap items-center justify-between">
                 <div class="nav-content-left xl:me-12 lg:me-8">
@@ -35,8 +35,7 @@
                 <span id="headerToggler" class="lg:hidden">
                     <img src="./assets/images/icons/burger.svg" alt="" width="30">
                 </span>
-                <div class="lg:static lg:h-auto lg:w-auto lg:flex lg:items-center lg:justify-between lg:flex-grow lg:flex-row lg:p-0   fixed h-screen w-full justify-start bg-white left-0 top-14 flex-col z-50 items-start p-5"
-                    id="responsiveHeader">
+                <div class="lg:static lg:h-auto lg:w-auto lg:flex lg:items-center lg:justify-between lg:flex-grow lg:flex-row lg:p-0   fixed h-screen w-full justify-start bg-white left-0 top-14 flex-col z-50 items-start p-5" id="responsiveHeader">
                     <div class="language-select lg:hidden">
                         <a href="#" class="control-lan relative flex items-center gap-2 mb-8 border border-default py-2 px-4">
                             <img class="inline-block" src="assets/images/icons/flag1.svg" alt="icons">
@@ -49,10 +48,48 @@
                         </a>
                     </div>
                     <div class="w-full lg:w-auto">
-                        <ul class="flex flex-wrap flex-col gap-x-5 lg:flex-row xl:gap-x-6">
-                            <li class="border-b border-default lg:border-0"><a class="flex justify-between items-center py-2 px-3 lg:py-0 lg:inline-flex lg:gap-x-2 font-normal" href="">Use cases <img src="./assets/images/icons/angle-down.svg" width="10" alt=""></a></li>
-                            <li class="border-b border-default lg:border-0"><a class="flex justify-between items-center py-2 px-3 lg:py-0 lg:inline-flex lg:gap-x-2 font-normal" href="">Pricing</a></li>
-                            <li class="border-b border-default lg:border-0"><a class="flex justify-between items-center py-2 px-3 lg:py-0 lg:inline-flex lg:gap-x-2 font-normal" href="">Contact</a></li>
+                        <ul class="flex flex-wrap flex-col gap-x-5 lg:flex-row xl:gap-x-6 lg:relative menu">
+                            <li class="border-b border-default lg:border-0 group">
+                                <a class="flex justify-between items-center py-2 px-3 lg:py-4 lg:inline-flex lg:gap-x-2 font-normal " href="#0">Use cases</a>
+                                <div
+                                    class="hidden lg:block space-x-11 px-4 pb-4 lg:pt-4 w-full lg:absolute bg-white lg:left-0 txl:op-full lg:opacity-0 lg:invisible transition-all duration-300 lg:transform scale-95 lg:group-hover:opacity-100 lg:group-hover:visible lg:group-hover:scale-100 flex-col submenu rounded-xl">
+                                    <div class="h-full gap-y-4 submenuList">
+                                        <span class="first:font-semibold ps-6px transform whitespace-nowrap mb-1 lg:text-ld hidden lg:block">Use cases</span>
+                                        <div class="grid grid-cols-2 gap-x-2">
+                                            <div class="lg:mr-4" role="group">
+                                                <a class="group block py-2 px-6px rounded-lg hover:bg-[#EEF0FD]" role="menuitem" href="#0">
+                                                    <span class="block transform whitespace-nowrap lg:text-lg">GDPR</span>
+                                                </a>
+                                                <a class="group block py-2 px-6px rounded-lg hover:bg-[#EEF0FD]" role="menuitem" href="#0">
+                                                    <span class="block transform whitespace-nowrap lg:text-lg">GRC</span>
+                                                </a>
+                                                <a class="group block py-2 px-6px rounded-lg hover:bg-[#EEF0FD]" role="menuitem" href="#0">
+                                                    <span class="block transform whitespace-nowrap lg:text-lg">NIS2</span>
+                                                </a>
+                                                <a class="group block py-2 px-6px rounded-lg hover:bg-[#EEF0FD]" role="menuitem" href="#0">
+                                                    <span class="block transform whitespace-nowrap lg:text-lg">Risk</span>
+                                                </a>
+                                            </div>
+                                            <div class="lg:mr-4" role="group">
+                                                <a class="group block py-2 px-6px rounded-lg hover:bg-[#EEF0FD]" role="menuitem" href="#0">
+                                                    <span class="block transform whitespace-nowrap lg:text-lg">GDPR</span>
+                                                </a>
+                                                <a class="group block py-2 px-6px rounded-lg hover:bg-[#EEF0FD]" role="menuitem" href="#0">
+                                                    <span class="block transform whitespace-nowrap lg:text-lg">GRC</span>
+                                                </a>
+                                                <a class="group block py-2 px-6px rounded-lg hover:bg-[#EEF0FD]" role="menuitem" href="#0">
+                                                    <span class="block transform whitespace-nowrap lg:text-lg">NIS2</span>
+                                                </a>
+                                                <a class="group block py-2 px-6px rounded-lg hover:bg-[#EEF0FD]" role="menuitem" href="#0">
+                                                    <span class="block transform whitespace-nowrap lg:text-lg">Risk</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="border-b border-default lg:border-0"><a class="flex justify-between items-center py-2 px-3 lg:py-4 lg:inline-flex lg:gap-x-2 font-normal" href="">Pricing</a></li>
+                            <li class="border-b border-default lg:border-0"><a class="flex justify-between items-center py-2 px-3 lg:py-4 lg:inline-flex lg:gap-x-2 font-normal" href="">Contact</a></li>
                         </ul>
                     </div>
                     <div class="flex flex-wrap items-center lang-sign-wrapper mt-12 lg:mt-0">
