@@ -175,6 +175,20 @@
   .btn:hover {
     @apply border-baseDark bg-base-deep text-white;
   }
+  .flex.items-start.gap-3.w-full,
+  .flex.items-center.gap-3.w-full {
+    align-items: flex-start;
+  }
+  .flex.items-start.gap-3.w-full img,
+  .flex.items-center.gap-3.w-full img {
+    transform: translateY(3px)
+  }
+  @media (max-width:575px) {
+    .flex.items-start.gap-3.w-full img,
+    .flex.items-center.gap-3.w-full img {
+      transform: translateY(2px)
+    }
+  }
 }
 
 @layer utilities {

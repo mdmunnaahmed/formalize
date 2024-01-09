@@ -855,6 +855,23 @@ a:focus svg {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.flex.items-start.gap-3.w-full,
+  .flex.items-center.gap-3.w-full {
+  align-items: flex-start;
+}
+
+.flex.items-start.gap-3.w-full img,
+  .flex.items-center.gap-3.w-full img {
+  transform: translateY(3px)
+}
+
+@media (max-width:575px) {
+  .flex.items-start.gap-3.w-full img,
+    .flex.items-center.gap-3.w-full img {
+    transform: translateY(2px)
+  }
+}
+
 .fixed {
   position: fixed;
 }
@@ -1237,6 +1254,11 @@ a:focus svg {
   border-radius: 0.75rem;
 }
 
+.rounded-s-xl {
+  border-start-start-radius: 0.75rem;
+  border-end-start-radius: 0.75rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -1300,6 +1322,11 @@ a:focus svg {
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-1 {
@@ -1563,6 +1590,54 @@ a:focus svg {
       max-width: 1440px;
     }
   }
+
+  .lg\:flex.items-start.gap-3.w-full,.lg\:flex.items-center.gap-3.w-full {
+    align-items: flex-start;
+  }
+
+  .lg\:items-center
+  .flex.gap-3.w-full {
+    align-items: flex-start;
+  }
+
+  .lg\:flex.items-start.gap-3.w-full img,.lg\:flex.items-center.gap-3.w-full img {
+    transform: translateY(3px)
+  }
+
+  .lg\:items-center
+  .flex.gap-3.w-full img {
+    transform: translateY(3px)
+  }
+
+  @media (max-width:575px) {
+    .lg\:flex.items-start.gap-3.w-full img,.lg\:flex.items-center.gap-3.w-full img {
+      transform: translateY(2px)
+    }
+
+    .lg\:items-center
+    .flex.gap-3.w-full img {
+      transform: translateY(2px)
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:items-center
+  .flex.gap-3.w-full {
+    align-items: flex-start;
+  }
+
+  .xl\:items-center
+  .flex.gap-3.w-full img {
+    transform: translateY(3px)
+  }
+
+  @media (max-width:575px) {
+    .xl\:items-center
+    .flex.gap-3.w-full img {
+      transform: translateY(2px)
+    }
+  }
 }
 
 .first\:font-semibold:first-child {
@@ -1782,10 +1857,6 @@ a:focus svg {
     padding-bottom: 1.25rem;
   }
 
-  .md\:pt-10 {
-    padding-top: 2.5rem;
-  }
-
   .md\:pt-6 {
     padding-top: 1.5rem;
   }
@@ -1894,10 +1965,6 @@ a:focus svg {
 
   .lg\:mt-9 {
     margin-top: 2.25rem;
-  }
-
-  .lg\:mb-1 {
-    margin-bottom: 0.25rem;
   }
 
   .lg\:block {
@@ -2102,6 +2169,10 @@ a:focus svg {
     padding-top: 0px;
   }
 
+  .lg\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
   .lg\:pt-11 {
     padding-top: 2.75rem;
   }
@@ -2116,10 +2187,6 @@ a:focus svg {
 
   .lg\:pt-4 {
     padding-top: 1rem;
-  }
-
-  .lg\:pt-10 {
-    padding-top: 2.5rem;
   }
 
   .lg\:text-center {
@@ -2183,8 +2250,8 @@ a:focus svg {
     bottom: 8rem;
   }
 
-  .xl\:-me-36 {
-    margin-inline-end: -9rem;
+  .xl\:-me-10 {
+    margin-inline-end: -2.5rem;
   }
 
   .xl\:mb-10 {
@@ -2199,6 +2266,10 @@ a:focus svg {
     margin-bottom: 1.25rem;
   }
 
+  .xl\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
   .xl\:me-12 {
     margin-inline-end: 3rem;
   }
@@ -2209,14 +2280,6 @@ a:focus svg {
 
   .xl\:mt-16 {
     margin-top: 4rem;
-  }
-
-  .xl\:mb-8 {
-    margin-bottom: 2rem;
-  }
-
-  .xl\:-me-10 {
-    margin-inline-end: -2.5rem;
   }
 
   .xl\:w-5 {
@@ -2302,6 +2365,10 @@ a:focus svg {
 
   .xxl\:h-5 {
     height: 1.25rem;
+  }
+
+  .xxl\:w-11\/12 {
+    width: 91.666667%;
   }
 
   .xxl\:w-32 {
